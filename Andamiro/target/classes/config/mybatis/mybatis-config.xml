@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 타입 별칭 설정============================ -->
+	<typeAliases>
+		<typeAlias type="com.ict.domain.CenterVO" alias="Center" />
+		<typeAlias type="com.ict.domain.CenterReplyVO" alias="CReply" />
+		<typeAlias type="com.ict.domain.MemberVO" alias="User" />
+		<typeAlias type="com.ict.domain.CategoryVO" alias="Category" />
+		<typeAlias type="com.ict.domain.ProductVO" alias="Product" />
+		<typeAlias type="com.ict.domain.OrderVO" alias="Order" />
+		<typeAlias type="com.ict.domain.ReceiverVO" alias="Receiver" />
+		<typeAlias type="com.ict.domain.ReviewVO" alias="Review" />
+		<typeAlias type="com.ict.domain.CartVO" alias="Cart" />
+		<typeAlias type="com.ict.domain.PagingVO" alias="Page" />
+	</typeAliases>
+
+	<!-- 매퍼 정의================================ -->
+	<mappers>
+		<mapper resource="config/mybatis/mapper/CenterMapper.xml" />
+		<mapper resource="config/mybatis/mapper/CenterReplyMapper.xml" />
+		<mapper resource="config/mybatis/mapper/MemberMapper.xml" />
+		<mapper resource="config/mybatis/mapper/CategoryMapper.xml"/>
+		<mapper resource="config/mybatis/mapper/ProductMapper.xml" />
+		<mapper resource="config/mybatis/mapper/OrderMapper.xml" />
+		<mapper resource="config/mybatis/mapper/MemberMapper.xml" />
+		<mapper resource="config/mybatis/mapper/ReviewMapper.xml" />
+		<mapper resource="config/mybatis/mapper/CartMapper.xml" />
+	</mappers>
+</configuration>

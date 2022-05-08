@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+/* main 부분 ------------------------------- d*/
+form{
+	order:2;
+}
+div.addContainer {
+    order:2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    order:2;
+    width: 100%;
+    min-height: 73vh; /* 컨텐츠 없을 때 최소 세로길이 */
+    background-color: var(--main-bg-m-grey);
+    text-align: center;
+}
+.WritingWrap{
+    width:100%;
+    background-color:#F8FAE4;
+}
+.WritingWrap .WritingHeader {
+    display: flex;
+    font-size: 1.2em;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 61.145833%;
+    margin: .8% auto;
+    border-bottom: 2px solid black;
+
+}
+.WritingWrap .WritingHeader #BaseButton {
+    margin-top: 10px;
+    padding: 0 17px;
+    margin-bottom: 5px;
+    background-color: #658361;
+    color: #FFD369;
+    font-weight: bold;
+}
+/* WritingContent ------------------------------------- */
+.WritingContent {
+    width: 61.145833%;
+    margin: 0 auto;
+}
+.WritingContent .ContentTop {
+    display: flex;
+    margin: .8% auto;
+}
+.WritingContent .ContentTop .menu1 {
+    margin-right: 2%;
+    width: 68%;
+    height: 38px;
+    border: 1px solid #222831;
+}
+.WritingContent .ContentTop .menu2 {
+    width: 30%;
+    height: 38px;
+    border: 1px solid #222831;
+}
+.WritingContent .ContentTitle #title {
+    width:100%;
+    height: 38px;
+    border: 1px solid #222831;
+}
+.WritingContent .Contentmiddle{
+    margin-top: 1%;
+    border: 2px solid #222831;
+    display: flex;
+}
+.WritingContent .Contentmiddle .font {
+    width: 50%;
+}
+.WritingContent .Contentmiddle .plugin {
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EEEEEE;
+    padding:5px;
+}
+.WritingContent .Contentmiddle .font-family {
+    width: 20%;
+    height: 27px;
+    border: 1px soild #222831;
+}
+.WritingContent .Contentmiddle .font-size {
+    width: 25%;
+    height: 27px;
+    border: 1px soild #222831;
+    
+}
+textarea {
+    width: 100%;
+    resize:none;
+    height: 300px;
+    border: 1px solid #222831;
+}
+.WritingContent .Content .contentarea{
+    margin-top: 1%;
+}
+.WritingContent .Content .taginput{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #222831;
+}
+
+/* 360px(모바일) -------------------------------------------- */
+@media all and (max-width:767px) {
+    
+    .container {
+        overflow: auto
+    }
+    
+    .WritingWrap .WritingHeader .cm_title{
+    	text-align: center;
+    	padding-top: 10px;
+    	 
+    }
+    
+    .WritingWrap .WritingHeader {
+        display: flex;
+        font-size: .6em;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 61.145833%;
+        margin: .8% auto;
+        border-bottom: 2px solid black;
+    
+    }
+    .WritingWrap .WritingHeader #BaseButton {
+        margin-top: 10px;
+        padding: 2.5px 17px;
+        margin-bottom: 5px;
+        background-color: #222831;
+        color: #FFD369;
+        font-weight: bold;
+    }
+    .WritingContent .Contentmiddle{
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 1%;
+        border: 2px solid #222831;
+        position : inline;
+    }
+    .WritingContent .Contentmiddle .font {
+        width: 100%;
+        text-align: center;
+    }
+    .WritingContent .Contentmiddle .plugin {
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #EEEEEE;
+    }
+    .WritingContent .Contentmiddle .font-family {
+        width: 30%;
+        height: 20px;
+        border: 1px soild #222831;
+    }
+    .WritingContent .Contentmiddle .font-size {
+        width: 40%;
+        height: 20px;
+        border: 1px soild #222831;
+        
+    }
+}
+
+/* 768px(태블릿) -------------------------------------------- */
+@media all and (max-width:767px) {
+    h1.communitywrite_title{
+    	padding: 0.5em;
+    
+    }
+    h1.noticewrite_title{
+    	padding: 0.5em;
+    
+    }
+}
+@media all and (min-width:768px) and (max-width:1023px) {
+    
+}
+
+/* 1024px(PC) -------------------------------------------- */
+@media all and (min-width:1024px) {
+    #floatdiv {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper 
+   namespace="com.ict.mapper.CenterMapper">
+   
+   <!-- 총 게시글 갯수 가져오기 -->
+   <select id="getTotalCount" resultType="_int">
+      select count(*) from center_aa
+   </select>
+   
+   <!-- 게시글 리스트 가져오기 -->
+   <select id="listCenter" resultType="Center">
+  select  sc_idx,m.name,m.idx,sc_title,sc_content,sc_date
+from center_aa c join member_aa m on c.idx_fk= m.idx 
+   </select>
+   
+   <!-- 게시글 작성 -->
+   <insert id="insertCenter" parameterType="Center">
+   		<selectKey keyProperty="sc_idx" resultType="_int" order="BEFORE">
+   		select center_aa_seq.nextval from dual
+   		</selectKey>
+   		insert into center_aa
+   		values(#{sc_idx},#{sc_title},#{sc_content},sysdate,#{idx_fk}) 
+   </insert>
+   
+   <select id="selectCenterByIdx" parameterType="_int" resultType="Center">
+   		 select sc_idx,m.name,m.idx,sc_title,sc_content,sc_date
+   	   from center_aa c join member_aa m on c.idx_fk= m.idx
+   	    where sc_idx = #{value}
+   </select>
+   
+   <delete id="deleteCetner" parameterType="_int">
+   		delete from center_aa where sc_idx=#{value}
+   </delete>
+   
+   <update id="updateCener" parameterType="Center">
+   		update center_aa set sc_title = #{sc_title}, sc_content = #{sc_content} where sc_idx=#{sc_idx}
+   </update>
+   
+</mapper>

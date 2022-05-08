@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.head_top {
+	/*background-color: #658361;*/
+	color: #658361;
+	font-weight: bold;
+	height: 10%;
+	/*align-items: center;*/
+	/*padding: 13.8px;*/
+	text-align: center;
+	font-size: 2rem;
+}
+
+.head_top .head_title {
+	display: inline-block;
+	padding: 10px 0px 0px 15%;
+	height: 100%;
+}
+
+.head_top .head_join {
+	float: right;
+	height: 100%;
+}
+
+.head_top .head_login {
+	float: right;
+	height: 70px;
+}
+
+.log {
+	float: right;
+	height: 50%;
+	font-size: 1.5rem;
+}
+
+a {
+	padding: 13.5px;
+	text-decoration: none;
+	color: #658361;
+}
+
+.line_top {
+	border: 1px solid #D0DD97;
+}
+
+.ground {
+	border-right: 2px solid #658361;
+	height: 100%;
+	width: 25%;
+	padding: 15px;
+	text-align: center;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	/*background-color:#D0DD97;*/
+	margin-top: 0.5px;
+	align-items: center;
+}
+
+.content-wrap {
+	width: 100%;
+	/* height: 800px; */
+	height:80%;
+	background-color: #F8FAE4;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	left: 0px;
+	bottom: 0px;
+	/* background-color: #F9DE79; */
+	background-color: white;
+	border-top: #D0DD97;
+}
+
+.write {
+	font-size: 0.8rem;
+}
+
+a {
+	
+}
+
+a:link {
+	
+}
+
+a:visited {
+	
+}
+
+a:active {
+	
+}
+
+a:hover {
+	
+}
+
+.inner {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+
+section {
+	width: 100%;
+	background-color: #F8FAE4;
+}
+
+/* *************************** 상품페이지 *************************** */
+.container {
+	background-color: #F8FAE4;
+}
+
+.fas {
+	font-size: 2.5rem;
+	margin: 0 7px;
+}
+
+.fa_paw {
+	color: blueviolet
+}
+
+.slide-prev {
+	font-size: 3rem;
+	cursor: pointer;
+	color: #545e6f
+}
+
+.slide-next {
+	font-size: 1.3rem;
+	cursor: pointer;
+	color: #545e6f
+}
+
+.far {
+	font-size: 1.3rem;
+	cursor: pointer;
+	color: #545e6f
+}
+
+.list {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 1rem;
+	overflow: hidden;
+	padding: 1rem 0;
+}
+
+.card {
+	width: 500px;
+	box-shadow: 10px 10px 10px -5px rgba(25, 45, 70, .2);
+	border-radius: 8px;
+	margin: 0 10px;
+	transform: 0.4s;
+}
+
+.card:hover {
+	box-shadow: 10px 10px 10px 0px rgba(25, 45, 70, .2);
+	transform: translate(0, -5px);
+}
+
+.food {
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+	height: 300px;
+}
+
+.food-container {
+	width: 100%;
+	padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.food1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.food-info {
+	font-size: 0.9rem;
+	color: brown
+}
+
+.food-fomat {
+	font-size: 0.9rem;
+	color: white;
+	background-color: blue;
+	padding: 0.2rem;
+}
+
+.food-desc {
+	width: 100%;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+img.food {
+	width: 96%;
+}
+
+.food-title {
+	font-weight: bold;
+	color: #545e6f;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0.5rem;
+}
+
+.food-detail {
+	font-size: 0.9rem;
+	color: #545e6f;
+	line-height: 1.5rem;
+}
+
+li a:hover {
+	cursor: pointer;
+}
+
+.away {
+	display: visual;
+}
+
+.content {
+	overflow: auto;
+	padding-top: 10%;
+}
+
+.sort-title{
+	color: #658361;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5rem;
+}
